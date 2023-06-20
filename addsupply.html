@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PS Admin</title>
+    <link rel="stylesheet" href="css/admin_styles.css">
+</head>
+
+<body>
+    <div class="sidebar">
+        <h2>P S ADMIN</h2>
+
+        <ul>
+            <li>
+                <a style="margin-top:60px;" href="admin.html">ADD PET</a>
+            </li>
+
+            <li>
+                <a href="#">ADD SUPPLY</a>
+            </li>
+
+            <li>
+                <a href="addadvice.html">ADD ADVICES</a>
+            </li>
+
+            <li>
+                <a href="controls.html">CONTROLS</a>
+            </li>
+        </ul>
+        <div style="margin-top:200px;">
+            <a href="login.html" style="font-size: 20px;color: rgb(153, 48, 0); font-weight: bold; margin: 800px 0px 0px 170px;">log out</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <h2 class="title">ADD SUPPLY</h2>
+        <form>
+            <p class="par">Type</p>
+            <input id="suptype_txt" type="text" class="textboxes" type="text" placeholder="Enter type">
+            <p class="par">Expiration Date</p>
+            <input id="expdate_txt" class="textboxes" type="text" placeholder="Enter expiration date">
+            <p class="par">Pet type</p>
+            <input id="pettype_txt" class="textboxes" type="text" placeholder="Enter pet type">
+            <p class="par">Weight</p>
+            <input id="supweight_txt" class="textboxes" type="text" placeholder="Enter weight in kg">
+            <p class="par">Price</p>
+            <input id="supprice_txt" class="textboxes" type="text" placeholder="Enter price in EGP">
+        </form>
+        <button type="button" class="btn" id="add_btn">ADD</button>
+    </div>
+
+    <div class="container">
+        <div class="wrapper">
+            <div class="image">
+                <img src="" alt="">
+            </div>
+            <div class="content1">
+                <div class="icon">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                </div>
+                <div class="text">
+                    No file chosen, yet!
+                </div>
+            </div>
+            <div id="cancel-btn">
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="file-name">
+                File name here
+            </div>
+        </div>
+        <button onclick="defaultBtnActive()" id="custom-btn">Choose an image</button>
+        <input id="default-btn" type="file" hidden>
+    </div>
+    <script src="script/addrec.js"></script>
+</body>
+
+</html>

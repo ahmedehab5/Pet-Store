@@ -1,0 +1,229 @@
+body {
+    font-family: sans-serif;
+    background-color: rgb(170, 170, 170);
+    margin: 0px 0px 0px 0px;
+    display: flex;
+}
+
+.form-group textarea {
+    border-radius: 5px;
+    border: 2px solid;
+    background: transparent;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    width: 350px;
+    font-size: 15px;
+}
+
+.sidebar {
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    background-color: rgb(29, 29, 29);
+}
+
+.sidebar h2 {
+    color: rgb(153, 48, 0);
+    text-align: center;
+    width: 100%;
+    background-color: black;
+    padding: 20px 0px;
+    margin: 0px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+.sidebar ul li {
+    align-items: center;
+    text-align: center;
+}
+
+.sidebar ul li {
+    margin: 80px 10px;
+    font-size: 20px;
+    color: aliceblue;
+    text-decoration: none;
+    position: static;
+}
+
+.sidebar ul li a {
+    font-size: 20px;
+    color: rgb(170, 123, 101);
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+    color: rgb(153, 48, 0);
+    border: 2px solid rgb(153, 48, 0);
+    padding: 10px;
+    font-size: 22px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.content {
+    margin-left: 250px;
+    padding: 5px;
+    width: 250px;
+    margin-right: 5px;
+}
+
+.title {
+    color: rgb(153, 48, 0);
+    text-align: center;
+    width: 100%;
+    padding: 20px 0px;
+    margin: 0px;
+}
+
+
+/* add pet */
+
+.btn {
+    width: 300px;
+    height: 40px;
+    background-color: rgb(153, 48, 0);
+    border-radius: 15px;
+    margin-left: 200px;
+}
+
+.par {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color: rgb(29, 29, 29);
+}
+
+.textboxes {
+    width: 200px;
+    margin-bottom: 45px;
+    border: none;
+    outline: none;
+    height: 30px;
+    background: transparent;
+    border-bottom: 1px solid rgb(29, 29, 29);
+    cursor: pointer;
+    color: rgb(29, 29, 29);
+}
+
+.content form {
+    margin: 30px;
+    margin-bottom: 0px;
+}
+
+
+/* add image*/
+
+.container {
+    height: 350px;
+    width: 430px;
+    position: static;
+    margin: 100px 50px 20px 80px;
+}
+
+.container .wrapper {
+    position: relative;
+    height: 300px;
+    width: 100%;
+    border-radius: 10px;
+    background: transparent;
+    border: 2px dashed #c2cdda;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper.active {
+    border: none;
+}
+
+.wrapper .image {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.wrapper .icon {
+    font-size: 100px;
+    color: #9658fe;
+}
+
+.wrapper .text {
+    font-size: 20px;
+    font-weight: 500;
+    color: #5B5B7B;
+}
+
+.wrapper #cancel-btn i {
+    position: absolute;
+    font-size: 20px;
+    right: 15px;
+    top: 15px;
+    color: #9658fe;
+    cursor: pointer;
+    display: none;
+}
+
+.wrapper.active:hover #cancel-btn i {
+    display: block;
+}
+
+.wrapper #cancel-btn i:hover {
+    color: #e74c3c;
+}
+
+.wrapper .file-name {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding: 8px 0;
+    font-size: 18px;
+    color: #fff;
+    display: none;
+    background: linear-gradient(135deg, #3a8ffe 0%, #9658fe 100%);
+}
+
+.wrapper.active:hover .file-name {
+    display: block;
+}
+
+.container #custom-btn {
+    margin-left: 140px;
+    margin-top: 30px;
+    display: block;
+    width: 150px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    background: rgb(153, 48, 0);
+    ;
+}
+
+.content1 {
+    margin-left: 105px;
+    padding: 5px;
+    width: 250px;
+    margin-right: 5px;
+}

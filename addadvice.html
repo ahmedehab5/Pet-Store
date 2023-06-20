@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PS Admin</title>
+    <link rel="stylesheet" href="css/admin_styles.css">
+</head>
+
+<body>
+    <div class="sidebar">
+        <h2>P S ADMIN</h2>
+
+        <ul>
+            <li>
+                <a style="margin-top:60px;" href="admin.html">ADD PET</a>
+            </li>
+
+            <li>
+                <a href="addsupply.html">ADD SUPPLY</a>
+            </li>
+
+            <li>
+                <a href="#">ADD ADVICES</a>
+            </li>
+
+            <li>
+                <a href="controls.html">CONTROLS</a>
+            </li>
+        </ul>
+        <div style="margin-top:200px;">
+            <a href="login.html" style="font-size: 20px;color: rgb(153, 48, 0); font-weight: bold; margin: 800px 0px 0px 170px;">log out</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <h2 class="title">ADD SUPPLY</h2>
+        <form>
+            <p class="par">Title</p>
+            <input id="suptype_txt" type="text" class="textboxes" type="text" placeholder="Enter type">
+            <div class="form-group">
+                <label for="message" style="font-weight: bold;">Advice</label><br>
+                <textarea id="message" cols="30" rows="10"></textarea>
+            </div>
+        </form>
+        <button type="button" class="btn" id="add_btn">ADD</button>
+    </div>
+
+    <script src="script/addrec.js"></script>
+</body>
+
+</html>

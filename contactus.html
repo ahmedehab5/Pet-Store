@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pet Shop</title>
+    <link rel="stylesheet" href="css/user_styles.css">
+    <!-- <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"> -->
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <h1 class="navbar-brand"><a href="user.html">Pet Shop</a></h1>
+            <ul>
+                <li><a href="user.html">Pets</a></li>
+                <li><a href="supplies.html">Supplies</a></li>
+                <li><a href="advices.html">Advices</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li class="active"><a href="contactus.html">Contact Us</a></li>
+            </ul>
+            <a class="navbar-logout" href="login.html">logout</a>
+        </nav>
+    </header>
+    <main class="contact-page">
+        <div class="viewboxs">
+            <form class="contact-us_form">
+                <div class="form-group">
+                    <label for="username">Name</label><br>
+                    <input id="username" type="text">
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail</label><br>
+                    <input id="email" type="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address</label><br>
+                    <input id="text" type="address" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label><br>
+                    <textarea id="message" cols="30" rows="10"></textarea>
+                </div>
+                <input class="send_btn" type="submit" value="Send">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <h4>copyright &copy; <a href="#">Bit&bite</a></h4>
+    </footer>
+
+</body>
+
+</html>
